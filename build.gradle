@@ -1,0 +1,23 @@
+plugins {
+    id "java"
+    id 'org.springframework.boot' version '1.5.8.RELEASE'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile "com.box:box-java-sdk:2.8.2"
+    compile "org.springframework.boot:spring-boot-starter-web"
+    testCompile "junit:junit:4.12"
+}
+
+jar {
+    baseName = "boxPlayground"
+    version =  "0.1.0"
+}

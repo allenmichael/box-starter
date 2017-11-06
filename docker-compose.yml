@@ -1,0 +1,8 @@
+version: '2'
+services:
+  api:
+    build: .
+    volumes:
+      - ./build:/home/app/build
+    ports:
+      - "8080:8080"
